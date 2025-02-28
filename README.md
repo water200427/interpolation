@@ -2,6 +2,11 @@
 
 此專案提供了一個Python腳本，用於使用各種插值方法填充Excel文件中的缺失值。該腳本支持不同的四捨五入方法，並且可以繪製填充後的數據。
 
+## 在Colab上開啟
+
+你可以在Google Colab上運行此專案：
+[在Colab上開啟](https://colab.research.google.com/github/water200427/interpolation/blob/main/interpolation.ipynb)
+
 ## 要求
 
 - Python 3.11
@@ -47,7 +52,7 @@
 
 ## 配置
 
-你可以通過修改`data_interpolation.py`中的[fill_method](http://_vscodecontentref_/0)和[rounding_method](http://_vscodecontentref_/1)變量來配置插值和四捨五入方法。
+你可以通過修改`data_interpolation.py`中的`fill_method`和`rounding_method`變量來配置插值和四捨五入方法。
 
 - **插值方法**：
     - `'first'`：使用第一個可用值向下填充。
