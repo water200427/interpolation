@@ -34,7 +34,7 @@ def round_values(df, method):
         raise ValueError("Unknown rounding method")
 
 def plot_data(df, title):
-    df.plot(kind='line', marker='o')
+    df.plot(kind='line', marker='.', x="--")
     plt.title(title)
     plt.xlabel('Index')
     plt.ylabel('Values')
@@ -56,6 +56,8 @@ def main():
         df_filled = fill_down_last(df)
     elif fill_method == 'linear':
         df_filled = linear_interpolation(df)
+    elif fill_method == 'quadratic':
+        df_filled = quadratic_interpolation(df)
     elif fill_method == 'exponential':
         df_filled = exponential_interpolation(df)
     else:
